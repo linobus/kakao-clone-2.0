@@ -5,9 +5,88 @@
   margin: 20px 0px;
 }
 
+.friends__list .friend__column i {
+  margin-left: 5px;
+  color: #66c258c0;
+}
+
 .friends__plus .friends__title,
 .friends__list .friends__title {
   font-size: 14px;
   opacity: 0.6;
   margin-bottom: 10px;
+}
+
+.friends__list:hover .friend__profile {
+  opacity: 1;
+}
+
+.friend__profile {
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding-bottom: 0px;
+  background-color: white;
+  border-top-width: 0px;
+  border: 1px solid #e2e2e2;
+  opacity: 0;
+  margin: 10px;
+}
+
+.friend__profile .profile__bg {
+  height: 150px;
+  width: 100%;
+  background-image: url("https://pds.joins.com/news/component/htmlphoto_mmdata/201912/20/4e2bd867-32a4-4eee-8e21-5dae7fced380.jpg");
+  background-size: cover;
+}
+
+.friend__profile .profile__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile__header .friend__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  top: -30px;
+  border: 3px solid white;
+}
+
+.profile__header .friend__name {
+  margin-top: -20px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.profile__header .friend__alram {
+  font-size: 13px;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+.friend__profile .friend__buttons {
+  padding: 30px 30px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.friend__buttons .friend__button {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(209, 209, 209);
+  width: 115px;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.friend__buttons .friend__button:last-child {
+  background-color: rgba(255, 189, 66, 0.3);
+  color: rgb(153, 153, 153);
 }
